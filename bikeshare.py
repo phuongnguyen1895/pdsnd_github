@@ -46,7 +46,7 @@ def get_filters():
         else:
             print('Invalid input. Please enter a valid time filter or "none".')
 
-    print('-'*40)
+    print('-'*20)
     return city, month, day
 
 
@@ -132,7 +132,7 @@ def time_stats(df):
     print('The most common start hour:', most_common_hour)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*20)
 
 
 def station_stats(df):
@@ -154,7 +154,7 @@ def station_stats(df):
     print('The most frequent combination of start station and end station trip:', most_common_trip)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*20)
 
 
 def trip_duration_stats(df):
@@ -172,7 +172,7 @@ def trip_duration_stats(df):
     print('Mean travel time:', mean_travel_time, 'seconds')
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*20)
   
 
 def user_stats(df):
@@ -208,7 +208,7 @@ def user_stats(df):
         print('\nBirth year data not available.')
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-'*20)
 
 
 def main():
